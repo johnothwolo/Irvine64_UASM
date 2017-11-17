@@ -66,15 +66,16 @@ wine regedit /pathtofolder/registry.reg
 Usage: masm <sourcefile>
 ```
 
-6. Still Working on
 
+6. Still Working on
+---------------------
 Ability to `include Irvine16.inc` files
 Other enhancements
-
 ---------------------
+
 Sources: 
 --------
 
-    - [Installing MASM SDK and masm script](https://reberhardt.com/blog/programming/2016/01/30/masm-on-mac-or-linux.html)
-    - [Microsoft Visual Studio turotrials](https://code.visualstudio.com/docs/)
-    - [Inspiration](https://github.com/janka102/MASM_OSX)
+   - [Installing MASM SDK and masm script](https://reberhardt.com/blog/programming/2016/01/30/masm-on-mac-or-linux.html)
+   - [Microsoft Visual Studio turotrials](https://code.visualstudio.com/docs/)
+   - [Inspiration](https://github.com/janka102/MASM_OSX)
