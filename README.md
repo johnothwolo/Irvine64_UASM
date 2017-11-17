@@ -1,6 +1,7 @@
 Instructions:
 
-###Install Wine.
+1.Install Wine.
+---------------
 
 Mac
 ---
@@ -28,18 +29,21 @@ Arch-linux
 sudo pacman -Syu wine
 ```
 
-###Install MASM SDK
+2. Install MASM SDK
+-------------------
 
 ```sh
 wine /pathtofolder/masm_sdk.exe
 ```
 
-###Install Registries
+4. Install Registries
+---------------------
 ```sh
 wine regedit /pathtofolder/registry.reg
 ```
 
-###Open folder In Visual Studio Code
+5. Open folder In Visual Studio Code
+------------------------------------
 1. Open this folder in VS Code
 2. Create new file
     - File > New File ⌘N
@@ -62,13 +66,15 @@ wine regedit /pathtofolder/registry.reg
 Usage: masm <sourcefile>
 ```
 
-##Still Working on
+6. Still Working on
+-------------------
 
 Ability to `include Irvine16.inc` files
 Other enhancements
 
 
-###Sources: 
+Sources: 
+--------
 
     - [Installing MASM SDK and masm script](https://reberhardt.com/blog/programming/2016/01/30/masm-on-mac-or-linux.html)
     - [Microsoft Visual Studio turotrials](https://code.visualstudio.com/docs/)
