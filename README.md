@@ -67,11 +67,8 @@ Usage: masm <sourcefile>
 ```
 
 
-6. Still Working on
----------------------
-Ability to `include Irvine16.inc` files
-Other enhancements
----------------------
+6. Still Working on the ability to `include Irvine16.inc` files and other enhancements
+--------------------------------------------------------------------------------------
 
 Sources: 
 --------
