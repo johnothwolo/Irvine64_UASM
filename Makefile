@@ -1,9 +1,13 @@
 CC=link.exe
 CFLAGS= /NOLOGO /SUBSYSTEM:CONSOLE /ENTRY:main /LIBPATH:"C:\Irvine" Irvine32.lib Kernel32.Lib User32.Lib 
-WINE=wine
+WINE=$(which wine)
 
 LDIR=lib
 BDIR=bin
+
+if [ ! -d "lib"]; then 
+	mkdir bin
+fi
 
 CURRDIR=$(pwd)
 SRCS=$(wildcard *.asm)
