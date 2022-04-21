@@ -1,0 +1,2 @@
+/Users/john/Downloads/UASM-master/GccUnixD/uasm -macho64 Irvine64.asm 
+g++ -shared Irvine64.o -L/Users/john/Library/Developer/Xcode/DerivedData/kernel32-dzkiqtfckdfzxgajajlygpoqfwca/Build/Products/Debug -lkernel32 -framework CoreFoundation -lutil -o Irvine64.dylib
