@@ -1,0 +1,9 @@
+[submodule "UASM"]
+	path = UASM
+	url = https://github.com/johnothwolo/UASM
+[submodule "objconv"]
+	path = objconv
+	url = https://github.com/johnothwolo/objconv
+[submodule "kernel32"]
+	path = kernel32
+	url = https://github.com/johnothwolo/kernel32.git
