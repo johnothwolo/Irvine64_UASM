@@ -1,2 +1,13 @@
 .DS_Store
 .vscode/
+Irvine64_Library/*.o
+Irvine64_Library/*.macho
+Irvine64_Library/*.dylib
+Irvine64_Library/*.a
+Irvine64_Library/objconv
+Irvine64_Library/uasm
+Irvine64_Library/build_macho_from_elf.sh
+Irvine64_Library/build_macho.sh
+kernel32/DerivedData
+UASM/GccUnixD
+UASM/GccUnixR

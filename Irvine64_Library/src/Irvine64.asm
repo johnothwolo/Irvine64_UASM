@@ -490,8 +490,9 @@ GetCommandTail PROC
 QUOTE_MARK = 22h
 
 	pushaq
+	mov r15, rdx
 	INVOKE GetCommandLine   	; returns pointer in RAX
-
+	mov rdx, r15
 ; Initialize first byte of user's buffer to null, in case the 
 ; buffer already contains text.
 
@@ -501,8 +502,8 @@ QUOTE_MARK = 22h
 ; EXE filename (may include the path). This code will not work correctly 
 ; if the path contains an embedded space.
 
-	mov	rsi,rax
-L0:	mov	al,[rsi]    	; strip off first argument
+	mov	rsi, rax
+L0:	mov	al, byte ptr [rsi]    	; strip off first argument
 	inc	rsi
 	.IF al == QUOTE_MARK	; quotation mark found?
 	call	scan_for_quote	; scan until next quote mark
@@ -516,7 +517,7 @@ L0:	mov	al,[rsi]    	; strip off first argument
 
 ; Check if the rest of the tail is empty.
 
-LB:	cmp	BYTE PTR [rsi],1	; first byte in tail < 1?
+LB:	cmp	BYTE PTR [rsi], 1	; first byte in tail < 1?
 	jc	L2	; the tail is empty (CF=1)
 
 ; Copy all bytes from the command tail to the buffer.

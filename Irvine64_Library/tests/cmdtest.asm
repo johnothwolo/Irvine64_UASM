@@ -8,14 +8,10 @@ INCLUDE Irvine64.inc
 
 .code
 main PROC
-	call  ReadFloat
-
-
-
-
+	; call  ReadFloat
 
     ; get command-line arguments
-    mov    rdx, OFFSET cmdline
+    lea     rdx, cmdline
     call    GetCommandTail
 
     ; display command-line string
@@ -23,7 +19,7 @@ main PROC
     call    Crlf
     mov    al, '>'
     call    WriteChar
-    mov    rdx, OFFSET cmdline
+    lea     rdx, cmdline
     call    WriteString
     mov    al, '<'
     call    WriteChar
